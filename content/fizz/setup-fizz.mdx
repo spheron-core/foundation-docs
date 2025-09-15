@@ -265,6 +265,32 @@ sphnctl fizz status
 
 18. Once your node is confirmed active, you will be automatically directed to your Fizz dashboard.
 
+## Running Your Node with Privileged Mode
+
+Running in Privileged Mode gives the user higher access to your host system, allowing them to run workloads with full permissions. This makes it easier for users to install dependencies that may not be possible in a normal container workspace.
+
+Using privileged mode increases your chances of being selected for deployments, which in turn can help you earn more fees.
+
+However, with elevated permissions comes increased risk. A user could potentially deploy harmful workloads that might compromise your system. Only enable privileged mode if you are certain that your machine does not contain any personal or sensitive data.
+
+***Any compromises that happen due to this mode, Spheron Network won't be liable or held accountable.***
+
+To reduce risks and ensure stability, we enforce a one-active-workload policy: only one deployment can run at a time. This prevents one user's activity from interrupting or affecting another's.
+
+### Linux/Mac Command
+```sh
+sphnctl fizz start --token ...  --privileged
+```
+
+### Windows Command
+```bash
+sphnctl fizz start --token ...  --privileged
+```
+
+<Callout type="warning">
+**Security Warning:** Privileged mode grants elevated permissions to user workloads. Only enable this feature if you understand the risks and your machine doesn't contain sensitive data.
+</Callout>
+
 ## Accessing Your Dashboard
 
 After your node has been successfully validated and marked active, you'll be redirected to the main Fizz node dashboard. This dashboard is your control center for managing your node and tracking your earnings. Here's what you can expect:

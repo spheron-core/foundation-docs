@@ -15,7 +15,7 @@
   <a href="https://sphn.wiki/discord" target="_blank" rel="noreferrer">
     <img src="https://img.shields.io/static/v1?label=community&message=discord&color=blue" />
   </a>
-  <a href="https://sphn.wiki/x" target="_blank" rel="noreferrer">
+  <a href="https://x.com/spheron" target="_blank" rel="noreferrer">
     <img src="https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40SpheronFdn" />
   </a>
 </p>

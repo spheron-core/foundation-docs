@@ -74,11 +74,11 @@ const META: MetaRecord = {
       toc: false,
     },
   },
-  changelog: {
-    title: "Changelog",
-    href: "https://spheron.network/changelog",
-    type: "page",
-  },
+  // changelog: {
+  //   title: "Changelog",
+  //   href: "https://spheron.network/changelog",
+  //   type: "page",
+  // },
   foundation: {
     title: "Foundation",
     href: "https://foundation.spheron.network/",

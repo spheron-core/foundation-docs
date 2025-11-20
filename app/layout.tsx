@@ -15,6 +15,19 @@ export const metadata: Metadata = {
   },
   description: "Power your dapp with Spheron's next-generation infrastructure.",
   metadataBase: new URL('https://docs.spheron.network'),
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'none',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: {
       template: '%s | Spheron',
@@ -57,6 +70,30 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       suppressHydrationWarning
     >
       <Head faviconGlyph="✦">
+        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
+        <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="slurp" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="duckduckbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="baiduspider" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="yandexbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="facebookbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="twitterbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="applebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="ia_archiver" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="wayback" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="ahrefsbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="semrushbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="mj12bot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="dotbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="gptbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="chatgpt-user" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="ccbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="anthropic-ai" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="claude-web" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="perplexitybot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="youbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="google-extended" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
         <link
           rel="stylesheet"
           href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"

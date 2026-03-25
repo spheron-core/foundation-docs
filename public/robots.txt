@@ -1,4 +1,21 @@
-# Block all web crawlers from all content
+# Allow major search engine crawlers to access pages so they can see noindex meta tags and de-index
+# Without crawl access, search engines cannot read the noindex directive and may keep URLs indexed
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Block all other web crawlers from all content
 User-agent: *
 Disallow: /
 
@@ -39,20 +56,6 @@ Disallow: /
 User-agent: YandexBot
 Disallow: /
 
-User-agent: DuckDuckBot
-Disallow: /
-
-User-agent: Applebot
-Disallow: /
-
-User-agent: Slurp
-Disallow: /
-
-User-agent: Bingbot
-Disallow: /
-
-User-agent: Googlebot
-Disallow: /
 
 # Block archive crawlers
 User-agent: ia_archiver
